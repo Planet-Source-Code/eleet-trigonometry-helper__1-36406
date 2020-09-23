@@ -1,0 +1,304 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Hello and welcome to 31337 Software</title>
+</head>
+
+<body>
+
+<p align="center"><b><u><font size="4">Trigonometry Helper&nbsp;&nbsp; (by:
+31337 Software Ltd.)</font></u></b></p>
+
+<p>Hello and thank you for downloading 31337 Software's Trigonometric Helper!&nbsp; This
+file is the tutorial that will break down some processes and calculations in my
+program and how they are used.&nbsp; This is also a good read for someone who
+does not really know much about trigonometry and the very basic functions of
+sine, cosine and tangent.</p>
+<p><b><u>Table of Contents:</u></b></p>
+<p><a href="#1">1: Using The Pre-calculated values:</a><br>
+&nbsp;&nbsp;&nbsp; <a href="#1.1">1.1 Pi</a><br>
+&nbsp;&nbsp;&nbsp; <a href="#1.2">1.2 180/pi</a><br>
+&nbsp;&nbsp;&nbsp; <a href="#1.3">1.3 pi/180</a></p>
+<p><a href="#2">2: Using the Basic Trig Functions: Sine, Cosine, Tangent</a><br>
+&nbsp;&nbsp;&nbsp; <a href="#2.1">2.1 Sine (Sin)</a><br>
+&nbsp;&nbsp;&nbsp; <a href="#2.2">2.2 Cosine (Cos)</a><br>
+&nbsp;&nbsp;&nbsp; <a href="#2.3">2.3 Tangent (Tan)</a></p>
+<p><a href="#3">3: Using the Primary Trigonometric Functions (Ratios)</a><br>
+&nbsp;&nbsp;&nbsp; <a href="#3.1">3.1 Sine Primary Trig Function (or Ratio) (Sin<font face="Symbol">q</font> = opp/hyp)</a><br>
+&nbsp;&nbsp;&nbsp; <a href="#3.2">3.2 Cosine Primary Trig Function (or Ratio) (Cos<font face="Symbol">q</font> =
+adj/hyp)</a><br>
+&nbsp;&nbsp;&nbsp; <a href="#3.3">3.3 Tangent Primary Trig Function (or Ratio) (Tan<font face="Symbol">q</font> =
+opp/adj)</a></p>
+
+<p><a href="#4">4: Sine Law and its Use</a><br>
+&nbsp;&nbsp;&nbsp; <a href="#4.1">4.1 Sine Law</a></p>
+<hr>
+<p><b><u><a name="1">1: Using The Pre-calculated values:</a><br>
+<br>
+<a name="1.1">1.1 Pi:</a></u></b><br>
+<br>
+Pi has been used since the ancient days of the Greeks.&nbsp; It is most commonly known as 3.14 or 3.141.  To calculate pi to a
+much more accurate degree, there are 2 methods.<br>
+<br>
+<b>Method 1:</b><br>
+You can use the "Get pi" button in the program and use that value for pi.  You can even try to copy and paste the value of pi the Windows Calculator (under scientific mode) to an even more accurate degree.<br>
+<br>
+However, for 99% of calculators, they will only use numbers to at most 8 to 10 decimal places, so using the
+&quot;<i>Get pi</i>&quot; button in the main program is more than sufficient for
+the value.<br>
+<br>
+<b>Method 2:</b><br>
+This one requires a calculator to do, but it works just as well.<br>
+<br>
+Since the equation for circumference of a circle is:<br>
+<i>pi x diameter</i><br>
+You may use any diameter to substitute into this equation then divide your answer by the
+diameter to give you the value of pi.<br>
+<br>
+<b><u>*Note</u></b>: if you have a really fancy calculator, you can use the arctangent
+function (atn) with the value of 1 and multiply by 4 to get pi.  It should look something like this, depending on the calculator:<br>
+<br>
+<i>Atn(1) x 4 = 3.141.......</i><br>
+</p>
+<p><b><u><a name="1.2">1.2 (180/pi):</a></u></b><br>
+<br>
+This value is used to convert the values of all the trig functions from radians
+to degrees, after it has calculated the answer.&nbsp; This value is needed as
+the last step in any trig function (check my source) to convert the final answer
+as radians to degrees.<br>
+</p>
+<p><b><u><a name="1.3">1.3 (pi/180):</a></u></b><br>
+<br>
+Because the native language of the computer computes the answer in radians, instead of
+degrees, the angle needs to be converted from degrees to radians first, before
+it can be used.&nbsp; To convert an angle from degrees to radians, you use the value of
+<i>(180/pi)</i> and multiply it by your angle.</p>
+<hr>
+<p><b><u><a name="2">2: Using the Basic Trig Functions: Sine, Cosine, Tangent:</a></u></b></p>
+<p><b><u><a name="2.1">2.1 Sine (Sin):</a></u></b></p>
+<p>Sin, in programming, must be given the angle value from (Sin(angle)) expressed
+in radians (converted from degrees).</p>
+<p><b><u><a name="2.2">2.2 Cosine (Cos):</a></u></b></p>
+<p>Cosine in programming must be given the angle value from (Cos(angle)) expressed
+in radians (converted from degrees).</p>
+<p><b><u><a name="2.3">2.3 Tangent (Tan):</a></u></b></p>
+<p>Tangent in programming, is like sine and cosine in sections 2.1 and 2.2 respectively.  You follow to same procedure to use it.<br>
+</p>
+<hr>
+<p><b><u><a name="3">3: Using the Primary Trigonometric Functions:</a></u></b></p>
+<p>To use these primary trig functions, it is fairly simple to understand.  First, the 'variable' that is used to represent the angle is called 'theta'  which has the symbol of the Greek letter
+<b> theta, <font face="Symbol">q</font></b>.</p>
+<p>Secondly, the trig functions are represented like this:<br>
+function<font face="Symbol"><b>q</b></font>  = side1/side2</p>
+<p>-'<b>Function</b>' in this case will represent the trigonometric functions of
+<b> sine (sin), cosine (cos) and tangent (tan)</b>.</p>
+<p>-'<font face="Symbol"><b>q</b></font>' will represent the angle (in degrees) and return your answer in degrees.<br>
+*For programmers: in this program, you enter the value of the angle in degrees, it's converted to radians to be used, then it is calculated and returned to the text box as degrees.</p>
+<p>Now to actually tell you how to use these functions so you know <i> how opposite, adjacent and hypotenuse all corresponds to the
+triangle</i>.</p>
+<p>Here is the labeling for a triangle corresponding to the angle <font face="Symbol"><b>q</b></font>
+and the trig functions.<br>
+<img border="0" src="trig-triangle.jpg"></p>
+
+<p>
+Now, as you can see, angle A (angle BAC) is labeled as theta.  This means that this is the
+only angle you will be looking at for the trig function you are using.  So, if
+you were to look at triangle ABC, you will notice a few things.&nbsp; Each side
+that is opposite each vertex is labeled with the lowercase letter of whatever
+the vertex is labeled with.&nbsp; (Vertex <i>A</i> is opposite side <i>a</i>,
+and so forth.)</p>
+
+<p>Also you will notice that each side is labeled accordingly from angle
+A.&nbsp; So, the side opposite angle A, aside from being called side a (which
+will come in handy for the Sine Law), it is labeled as the '<i>opposite</i>'
+side.&nbsp; Now I think you can begin to see how the sides are labeled
+accordingly, so the side opposite the 90° angle is ALWAYS called the '<i>hypotenuse</i>'
+because it is always the longest side in a right-angled triangle.&nbsp; Well,
+now that you know where two are, the last but certainly not least of the sides
+is called the '<i>adjacent</i>' because it is the only side 'touching' angle A
+(ignoring the hypotenuse for a moment).</p>
+
+<p>Now you can begin to use the primary trigonometric functions with ease, as
+long as you remember a few things:<br>
+A) Remember how the labeling of a triangle works with respect to the angle you
+are using.<br>
+B) Remember that an angle, when using any trigonometric function, is always
+represented by the variable '<font face="Symbol"><b>q</b></font>' if the angle
+measure is not known.<br>
+C) The vertex letters are always capitalized and the sides opposite them are
+always labeled using the lowercase letter of whatever the vertex letter is.<br>
+D) <i>The labels hypotenuse, adjacent and opposite always refer to side lengths</i>.<br>
+</p>
+
+<p><b><u><a name="3.1">3.1 Sine Primary Trig Function (or Ratio) (Sin<font face="Symbol">q</font> =
+opp/hyp):</a></u></b></p>
+
+<p>The <i>Primary Trig Ratios</i>, in this case using Sine,&nbsp; is&nbsp; used to find either a missing
+length of the hypotenuse or opposite side of the angle in a right angle triangle ONLY.  Sine is used in the following method:<br>
+<img border="0" src="SOH.jpg" width="83" height="47"></p>
+
+<p>
+This method is used to find one of the missing sides, or you can find the missing
+angle.</p>
+
+<p>To find the missing angle, use this formula:<br>
+<img border="0" src="TS-1OH.jpg"></p>
+
+<p>
+To find the missing hypotenuse length:<br>
+<img border="0" src="HOST.jpg"></p>
+
+<p>To find the missing opposite length:<br>
+<img border="0" src="OHST.jpg"></p>
+
+<p>So, using these formulas, you can find either the angle, or either side
+length.<br>
+</p>
+
+<p><b><u><a name="3.2">3.2 Cosine Primary Trig Function (or Ratio) (Cos<font face="Symbol">q</font> =
+adj/hyp):</a></u></b></p>
+<p>The cosine primary trig ration is also used in the same fashion of sine, but
+instead of using the <i>opposite side</i>, it uses the <i>adjacent side</i>.&nbsp;
+This can also <b>ONLY be used in a right-angled triangle</b>, like all other <b>Primary
+Trig Ratios (Functions)</b>.&nbsp; Cosine is used like this:<br>
+<img border="0" src="CAH.jpg">
+</p>
+
+<p>
+These methods are used to find the missing sides, or to find the missing
+angle.</p>
+
+<p>To find the missing angle, use this formula:<br>
+<img border="0" src="TC-1AH.jpg"></p>
+
+<p>
+To find the missing hypotenuse length:<br>
+<img border="0" src="HACT.jpg"></p>
+
+<p>To find the missing adjacent length:<br>
+<img border="0" src="AHCT.jpg"></p>
+
+<p>Now you know how to properly use the <i>Cosine Primary Trig Function (Ratio)</i>.
+</p>
+
+<p><b><u> <a name="3.3">3.3 Tangent Primary Trig Function (or Ratio) (Tan<font face="Symbol">q</font> =
+opp/adj):</a></u></b>
+</p>
+
+<p>The tangent primary trig ration is also used in the same fashion as sine or
+cosine, but tangent is different.&nbsp; Tangent is the only Primary Trig Ratio
+that does not have the <i>hypotenuse</i> length as a variable in its
+equation.&nbsp; This can also <b>ONLY be used in a right-angled triangle</b>, like all other <b>Primary
+Trig Ratios (Functions)</b>.&nbsp; Tangent is used like this:<br>
+<img border="0" src="TOA.jpg">
+</p>
+
+<p>
+These methods are used to find the missing sides, or to find the missing
+angle.</p>
+
+<p>To find the missing angle, use this formula:<br>
+<img border="0" src="TT-1OA.jpg"></p>
+
+<p>
+To find the missing opposite length:<br>
+<img border="0" src="AOTT.jpg"></p>
+
+<p>To find the missing adjacent length:<br>
+<img border="0" src="OATT.jpg"></p>
+
+<p>Now you know how to properly use the <i>Tangent Primary Trig Function (Ratio)</i>.
+</p>
+
+<hr>
+<p><b><u><a name="4">4: Sine Law and its Use:</a></u></b></p>
+<p><b><u><a name="4.1">4.1 Sine Law:</a></u></b></p>
+<p><i>Sine Law</i> is a great law to remember if you need to find any angle or
+side of a triangle that you may be missing.&nbsp; <i>Sine Law</i> only works if
+you have <u><i>at least 2 angles and one side, or two sides and one opposite
+angle</i></u>.&nbsp; Well, now that you know what you need to have in order to
+use <i>Sine Law</i>, I can show you what it is and what it is good for.</p>
+<p><i>Sine Law</i> will work for <i>any triangle</i>, whether it is <b>right
+angled</b> (contains a 90° angle) or <b>oblique</b> (a non right angled triangle).&nbsp;
+Sine Law is the easiest of all laws to use for any triangle because it is a
+simple 'formula' to remember.&nbsp; Before I show you the actual law, you need
+to understand the labeling of a triangle.&nbsp; If you understand it already
+from either <i>Section 3</i> above or elsewhere, you can skip this part.</p>
+<p>Here is how labeling works in a triangle.&nbsp; All vertices are labeled with
+capital letters, for example: A, B and C.&nbsp; All sides are labeled with
+lowercase (small) letters, for example: a, b and c.&nbsp; So what you do is you
+label your vertices - I will use A, B and C as an example but it doesn't matter
+which letters you choose - and then look at one of the vertices for a
+moment.&nbsp; Let's say I am looking at <i>vertex A</i>, I want to label <u>side
+a</u>.&nbsp; This is done by looking at your vertex.&nbsp; For example, find A
+(or another letter, depending on what you chose) then write the lowercase letter
+of you vertex letter (so A in lowercase is a, B is b, C is c, etc...) on the
+side opposite (meaning the side that does not touch your vertex at all) your <i>vertex
+A</i>.&nbsp; Then repeat this process for the other two vertices and it should
+look like this, as an example, using the letters: A, B, C, a, b, c.</p>
+<p><img border="0" src="law-triangle.jpg" width="189" height="90"></p>
+<p>Now that you understand how the proper labeling of a triangle is done, I can
+finally show you what the <i>Sine Law</i> looks like.</p>
+<p><img border="0" src="sine-law.jpg"></p>
+<p>Since the law is pretty straight-forward, I wont spend a lot of time
+explaining it.&nbsp; Like I stated earlier, the lowercase letters (small
+letters) always represent the sides.&nbsp; The Uppercase letters (capital or big
+letters) always represent the vertices.&nbsp; Now to use the formula, use the <i>Sine
+Law</i> like a proportion.&nbsp; you sub whatever angles you know into the
+corresponding A, B or C.&nbsp; So if angle A (angle BAC) is equal to 46°, then
+that means I will sub 46° into my <i>Sine Law</i> where the letter <i><u>A</u></i>
+is.</p>
+<p>To sub the side lengths in would be the same process.&nbsp; If side <u><i>a</i></u>
+equals 10 cm, then I sub in the number 10 to where <u><i>a</i></u> is in the <i>Sine
+Law</i>.&nbsp; Thus you repeat the process for all your known angles and side
+lengths.</p>
+<p><u><b>*Note:</b></u> If you are given 2 angles and a side length, it is best
+to find the last angle, since it is very useful.&nbsp; (This is done by
+subtracting both angles from 180° - because that is always the total of the
+interior angles in a triangle - to find your last angle.)</p>
+<p>Well, now that all your substitution is done I will show you how to solve for
+a missing side/angle.&nbsp; All you have to do is look for one fraction in the
+law where you have substituted <u><i>both</i></u> the <i>side length</i> and the
+<i>vertex angle</i> into it.&nbsp; Once you have done that, you then look at the
+other two fractions to see which fraction has <u><i>either</i></u> the <i>side
+length</i> or the <i>vertex angle</i> which was substituted into it.&nbsp; If
+both fractions are missing one or the other, pick one, since it <b>does not</b>
+matter,</p>
+<p>So now you've picked two fractions.&nbsp; The only thing that is left is to
+write them down and make them equal to each other (since they are equal, all you
+really have to do is rewrite the two fractions you picked and put an equals sign
+'=' between them) and solve for whatever it is you are missing.</p>
+<p><u><b>*Note:</b></u> You should only have <b><u>1</u></b> (one) unknown
+value.&nbsp; If you have more than 1 unknown value, check your steps over and
+maybe reread this section of the tutorial.</p>
+<p>&nbsp;</p>
+<p>Here is an example of what it should look like.&nbsp; Given:<br>
+a = 10 cm<br>
+b = 6 cm<br>
+A = 85°<br>
+B = 45°<br>
+C = 50°</p>
+<p><img border="0" src="sin-law-ex1.jpg"></p>
+<p><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-CA;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">Now, here you can see that my only variable
+(unknown) is c.<span style="mso-spacerun: yes">&nbsp; </span>Since I have two
+fractions that I know both the <i>side length</i> and the <i>vertex angle</i>, I
+think I will use the sinB fraction to solve my sinC fraction and find c.<span style="mso-spacerun: yes">&nbsp;
+</span>To solve, you can use <i><u>cross-multiplication</u></i>.</span></p>
+<p><img border="0" src="sin-law-ex2.jpg"></p>
+<p>Now that you found c, you can repeat the process with any other variables you
+may have to completely solve the triangle (find all lengths and all angles) or
+you can just use it to solve for one variable.&nbsp; <span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-CA;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">And that’s all there is to the <i>Sine Law</i>.</span></p>
+<hr>
+<p align="center"><u><b>The End! ;)</b></u></p>
+
+</body>
+
+</html>
